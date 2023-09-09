@@ -37,3 +37,6 @@ We can create multiple projects using **django-admin** command. But each project
 ```
 virtualenv {virtual_env_name} -p {python_interpreter}
 ```
+
+## Run the server
+```python manage.py runserver```
