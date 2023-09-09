@@ -30,7 +30,10 @@ Entry point of WSGI(Web Server Gateway Interface) application which is used to d
 7. asgi.py
 Entry point of ASGI(Asynchronous Server Gateway Interface) application which is used to run the project with asynchronous web servers.
 
-
-
-
 We can create multiple projects using **django-admin** command. But each project will have the its own settings, database and other project specific configurations
+
+## Create a virtual environment for python packages:
+
+```
+virtualenv {virtual_env_name} -p {python_interpreter}
+```
