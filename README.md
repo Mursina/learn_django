@@ -45,3 +45,26 @@ virtualenv {virtual_env_name} -p {python_interpreter}
 ```django-admin startapp {app_name}```
 
 Then, we need to add app name inside settings.py file under the INSTALLED_APPS to indicate the app is part of the existing project
+
+## Create an endpoint
+Under views.py script, the logic will be implemented. For example:
+
+```
+# views.py
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Welcome")
+```
+
+This function shpould be imported to render the page using an endpoint. To do this, configure the endpoint under urlpatterns
+
+```
+# urls.py
+
+from homw import views
+
+urlpatterns = [
+    path('home', views.home)
+]
+```
