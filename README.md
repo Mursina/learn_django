@@ -40,3 +40,8 @@ virtualenv {virtual_env_name} -p {python_interpreter}
 
 ## Run the server
 ```python manage.py runserver```
+
+## Create an app to the existing project
+```django-admin startapp {app_name}```
+
+Then, we need to add app name inside settings.py file under the INSTALLED_APPS to indicate the app is part of the existing project
